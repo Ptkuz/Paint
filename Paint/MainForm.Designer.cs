@@ -30,10 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.создатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.изображениеВФорматеJPEGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.изображениеВФорматеPNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,21 +47,14 @@
             this.поЦентруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.плиткаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.свойстваИзображенияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.параметрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.видToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.линейкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.линииСеткиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.строкаСостоянияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.воВесьЭкранToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.фигурыПоКоординатамToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.прямоугольникToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.квадратToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.треугольникToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ромбToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.окружностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
             this.Eraser = new System.Windows.Forms.Button();
             this.Color = new System.Windows.Forms.Button();
             this.Pancel = new System.Windows.Forms.Button();
@@ -72,20 +62,25 @@
             this.Line = new System.Windows.Forms.Button();
             this.Fill = new System.Windows.Forms.Button();
             this.Circle = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_color = new System.Windows.Forms.PictureBox();
             this.picture = new System.Windows.Forms.PictureBox();
+            this.Information_label = new System.Windows.Forms.Label();
+            this.thickness_bar = new System.Windows.Forms.TrackBar();
+            this.thickness_label = new System.Windows.Forms.Label();
+            this.pictur_color = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_color)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thickness_bar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictur_color)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
-            this.видToolStripMenuItem,
-            this.фигурыПоКоординатамToolStripMenuItem});
+            this.видToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1945, 24);
@@ -95,44 +90,22 @@
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.создатьToolStripMenuItem,
             this.открытьToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.сохранитьToolStripMenuItem,
             this.toolStripMenuItem2,
             this.toolStripSeparator1,
             this.печатьToolStripMenuItem,
             this.отправитьToolStripMenuItem,
             this.сделатьФономРабочегоСтолаToolStripMenuItem,
-            this.свойстваИзображенияToolStripMenuItem,
-            this.параметрыToolStripMenuItem});
+            this.свойстваИзображенияToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
-            // 
-            // создатьToolStripMenuItem
-            // 
-            this.создатьToolStripMenuItem.Name = "создатьToolStripMenuItem";
-            this.создатьToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.создатьToolStripMenuItem.Text = "Создать";
             // 
             // открытьToolStripMenuItem
             // 
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
             this.открытьToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.открытьToolStripMenuItem.Text = "Открыть";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(249, 22);
-            this.toolStripMenuItem1.Text = "Последние";
-            // 
-            // сохранитьToolStripMenuItem
-            // 
-            this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.сохранитьToolStripMenuItem.Text = "Сохранить";
             // 
             // toolStripMenuItem2
             // 
@@ -242,12 +215,6 @@
             this.свойстваИзображенияToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.свойстваИзображенияToolStripMenuItem.Text = "Свойства изображения";
             // 
-            // параметрыToolStripMenuItem
-            // 
-            this.параметрыToolStripMenuItem.Name = "параметрыToolStripMenuItem";
-            this.параметрыToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.параметрыToolStripMenuItem.Text = "Параметры";
-            // 
             // видToolStripMenuItem
             // 
             this.видToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -290,51 +257,9 @@
             this.воВесьЭкранToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.воВесьЭкранToolStripMenuItem.Text = "Во весь экран";
             // 
-            // фигурыПоКоординатамToolStripMenuItem
-            // 
-            this.фигурыПоКоординатамToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.прямоугольникToolStripMenuItem,
-            this.квадратToolStripMenuItem,
-            this.треугольникToolStripMenuItem,
-            this.ромбToolStripMenuItem,
-            this.окружностьToolStripMenuItem});
-            this.фигурыПоКоординатамToolStripMenuItem.Name = "фигурыПоКоординатамToolStripMenuItem";
-            this.фигурыПоКоординатамToolStripMenuItem.Size = new System.Drawing.Size(155, 20);
-            this.фигурыПоКоординатамToolStripMenuItem.Text = "Фигуры по координатам";
-            // 
-            // прямоугольникToolStripMenuItem
-            // 
-            this.прямоугольникToolStripMenuItem.Name = "прямоугольникToolStripMenuItem";
-            this.прямоугольникToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.прямоугольникToolStripMenuItem.Text = "Прямоугольник";
-            // 
-            // квадратToolStripMenuItem
-            // 
-            this.квадратToolStripMenuItem.Name = "квадратToolStripMenuItem";
-            this.квадратToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.квадратToolStripMenuItem.Text = "Квадрат";
-            // 
-            // треугольникToolStripMenuItem
-            // 
-            this.треугольникToolStripMenuItem.Name = "треугольникToolStripMenuItem";
-            this.треугольникToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.треугольникToolStripMenuItem.Text = "Треугольник";
-            // 
-            // ромбToolStripMenuItem
-            // 
-            this.ромбToolStripMenuItem.Name = "ромбToolStripMenuItem";
-            this.ромбToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.ромбToolStripMenuItem.Text = "Ромб";
-            // 
-            // окружностьToolStripMenuItem
-            // 
-            this.окружностьToolStripMenuItem.Name = "окружностьToolStripMenuItem";
-            this.окружностьToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.окружностьToolStripMenuItem.Text = "Окружность";
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.Clear);
             this.panel1.Controls.Add(this.Eraser);
             this.panel1.Controls.Add(this.Color);
             this.panel1.Controls.Add(this.Pancel);
@@ -347,18 +272,21 @@
             this.panel1.Size = new System.Drawing.Size(346, 324);
             this.panel1.TabIndex = 4;
             // 
-            // button8
+            // Clear
             // 
-            this.button8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button8.Location = new System.Drawing.Point(225, 177);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(105, 81);
-            this.button8.TabIndex = 7;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseVisualStyleBackColor = true;
+            this.Clear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Clear.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Clear.Location = new System.Drawing.Point(225, 177);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(105, 40);
+            this.Clear.TabIndex = 7;
+            this.Clear.Text = "Отчистить ";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // Eraser
             // 
+            this.Eraser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Eraser.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Eraser.Image = global::Paint.Properties.Resources.ластик;
             this.Eraser.Location = new System.Drawing.Point(3, 90);
@@ -368,9 +296,11 @@
             this.Eraser.Text = "Ластик";
             this.Eraser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Eraser.UseVisualStyleBackColor = true;
+            this.Eraser.Click += new System.EventHandler(this.Eraser_Click);
             // 
             // Color
             // 
+            this.Color.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Color.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Color.Image = global::Paint.Properties.Resources.palette_clip_art_692;
             this.Color.Location = new System.Drawing.Point(225, 90);
@@ -380,9 +310,11 @@
             this.Color.Text = "Выбор цвета";
             this.Color.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Color.UseVisualStyleBackColor = true;
+            this.Color.Click += new System.EventHandler(this.Color_Click);
             // 
             // Pancel
             // 
+            this.Pancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Pancel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Pancel.Image = global::Paint.Properties.Resources._1614560305_96_p_karandash_na_belom_fone_1091;
             this.Pancel.Location = new System.Drawing.Point(3, 177);
@@ -396,6 +328,7 @@
             // 
             // Rect
             // 
+            this.Rect.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Rect.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Rect.Image = global::Paint.Properties.Resources._1619390586_24_phonoteka_org_p_kvadrat_bez_fona_271;
             this.Rect.Location = new System.Drawing.Point(114, 3);
@@ -405,9 +338,11 @@
             this.Rect.Text = "Прямоугольник";
             this.Rect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Rect.UseVisualStyleBackColor = true;
+            this.Rect.Click += new System.EventHandler(this.Rect_Click);
             // 
             // Line
             // 
+            this.Line.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Line.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Line.Image = global::Paint.Properties.Resources._1614553482_45_p_chernaya_liniya_na_belom_fone_661;
             this.Line.Location = new System.Drawing.Point(225, 3);
@@ -417,9 +352,11 @@
             this.Line.Text = "Линия";
             this.Line.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Line.UseVisualStyleBackColor = true;
+            this.Line.Click += new System.EventHandler(this.Line_Click);
             // 
             // Fill
             // 
+            this.Fill.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Fill.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Fill.Image = global::Paint.Properties.Resources._1614324842_40_p_raznotsvetnie_kraski_fon_581;
             this.Fill.Location = new System.Drawing.Point(114, 90);
@@ -429,9 +366,11 @@
             this.Fill.Text = "Заливка";
             this.Fill.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Fill.UseVisualStyleBackColor = true;
+            this.Fill.Click += new System.EventHandler(this.Fill_Click);
             // 
             // Circle
             // 
+            this.Circle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Circle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Circle.Image = global::Paint.Properties.Resources.круг;
             this.Circle.Location = new System.Drawing.Point(3, 3);
@@ -441,16 +380,19 @@
             this.Circle.Text = "Окружность";
             this.Circle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Circle.UseVisualStyleBackColor = true;
+            this.Circle.Click += new System.EventHandler(this.Circle_Click);
             // 
-            // pictureBox1
+            // pic_color
             // 
-            this.pictureBox1.Image = global::Paint.Properties.Resources.color_wheel_vector_clipart1;
-            this.pictureBox1.Location = new System.Drawing.Point(1319, 357);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(596, 403);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pic_color.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_color.Image = global::Paint.Properties.Resources.color_wheel_vector_clipart1;
+            this.pic_color.Location = new System.Drawing.Point(1319, 454);
+            this.pic_color.Name = "pic_color";
+            this.pic_color.Size = new System.Drawing.Size(545, 306);
+            this.pic_color.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_color.TabIndex = 0;
+            this.pic_color.TabStop = false;
+            this.pic_color.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pic_color_MouseClick);
             // 
             // picture
             // 
@@ -460,16 +402,57 @@
             this.picture.Size = new System.Drawing.Size(1313, 745);
             this.picture.TabIndex = 3;
             this.picture.TabStop = false;
+            this.picture.Paint += new System.Windows.Forms.PaintEventHandler(this.picture_Paint);
+            this.picture.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picture_MouseClick);
             this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
             this.picture.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picture_MouseMove);
             this.picture.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picture_MouseUp);
+            // 
+            // Information_label
+            // 
+            this.Information_label.AutoSize = true;
+            this.Information_label.Location = new System.Drawing.Point(1319, 354);
+            this.Information_label.Name = "Information_label";
+            this.Information_label.Size = new System.Drawing.Size(0, 13);
+            this.Information_label.TabIndex = 5;
+            // 
+            // thickness_bar
+            // 
+            this.thickness_bar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.thickness_bar.Location = new System.Drawing.Point(1671, 46);
+            this.thickness_bar.Name = "thickness_bar";
+            this.thickness_bar.Size = new System.Drawing.Size(193, 45);
+            this.thickness_bar.TabIndex = 6;
+            this.thickness_bar.Scroll += new System.EventHandler(this.thickness_bar_Scroll);
+            // 
+            // thickness_label
+            // 
+            this.thickness_label.AutoSize = true;
+            this.thickness_label.Location = new System.Drawing.Point(1683, 30);
+            this.thickness_label.Name = "thickness_label";
+            this.thickness_label.Size = new System.Drawing.Size(53, 13);
+            this.thickness_label.TabIndex = 7;
+            this.thickness_label.Text = "Толщина";
+            // 
+            // pictur_color
+            // 
+            this.pictur_color.BackColor = System.Drawing.SystemColors.WindowText;
+            this.pictur_color.Location = new System.Drawing.Point(1671, 131);
+            this.pictur_color.Name = "pictur_color";
+            this.pictur_color.Size = new System.Drawing.Size(100, 50);
+            this.pictur_color.TabIndex = 9;
+            this.pictur_color.TabStop = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1945, 772);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictur_color);
+            this.Controls.Add(this.thickness_label);
+            this.Controls.Add(this.thickness_bar);
+            this.Controls.Add(this.Information_label);
+            this.Controls.Add(this.pic_color);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.picture);
@@ -482,8 +465,10 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_color)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thickness_bar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictur_color)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,11 +477,8 @@
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem создатьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem открытьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem видToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem изображениеВФорматеJPEGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem изображениеВФорматеPNGToolStripMenuItem;
@@ -513,29 +495,26 @@
         private System.Windows.Forms.ToolStripMenuItem поЦентруToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem плиткаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem свойстваИзображенияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem параметрыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem линейкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem линииСеткиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem строкаСостоянияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem воВесьЭкранToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem фигурыПоКоординатамToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem прямоугольникToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem квадратToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem треугольникToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ромбToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem окружностьToolStripMenuItem;
         private System.Windows.Forms.PictureBox picture;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Circle;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_color;
         private System.Windows.Forms.Button Fill;
         private System.Windows.Forms.Button Line;
         private System.Windows.Forms.Button Rect;
         private System.Windows.Forms.Button Pancel;
         private System.Windows.Forms.Button Color;
         private System.Windows.Forms.Button Eraser;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.Label Information_label;
+        private System.Windows.Forms.TrackBar thickness_bar;
+        private System.Windows.Forms.Label thickness_label;
+        private System.Windows.Forms.PictureBox pictur_color;
     }
 }
 

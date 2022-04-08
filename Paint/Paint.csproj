@@ -158,5 +158,11 @@
   <ItemGroup>
     <None Include="Resources\ластик.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{e60da7d5-2c66-4c34-a0d2-96a0d7757fbd}</Project>
+      <Name>ClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
